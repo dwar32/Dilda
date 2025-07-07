@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DILDA — ткани и фурнитура</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Хэдер -->
+  <header class="bg-gray-100 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div>
+        <h1 class="text-2xl font-bold text-pink-600">DILDA</h1>
+        <p class="text-sm text-gray-500">Ткани и фурнитура</p>
+      </div>
+      <nav class="hidden md:flex space-x-6 text-sm">
+        <a href="/" class="hover:text-pink-600">Главная</a>
+        <a href="/about" class="hover:text-pink-600">О нас</a>
+        <a href="/catalog" class="hover:text-pink-600">Каталог</a>
+        <a href="/contacts" class="hover:text-pink-600">Контакты</a>
+        <a href="/profile" class="hover:text-pink-600">Профиль</a>
+        <a href="/cart" class="hover:text-pink-600 font-semibold">Корзина</a>
+      </nav>
+    </div>
+  </header>
+
+  {% block content %}{% endblock %}
+
+  <!-- Футер -->
+  <footer class="bg-gray-100 mt-12 py-10">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-gray-700">
+      <div>
+        <h4 class="font-semibold mb-2">О нас</h4>
+        <p>DILDA — сеть магазинов тканей и швейной фурнитуры. Работаем с 2025 года.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Адреса</h4>
+        <ul>
+          <li>г. Астана, ул. Кабанбай батыра, 12</li>
+          <li>г. Астана, пр. Туран, 30</li>
+          <li>г. Астана, ул. Сарыарка, 5</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Контакты</h4>
+        <p>Тел: +7 700 123 4567</p>
+        <p>Email: dilda@example.com</p>
+        <p>Instagram: @dilda_shop</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
